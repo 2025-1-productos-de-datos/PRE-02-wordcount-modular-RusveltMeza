@@ -1,5 +1,5 @@
-def split_in_words(all_lines):
+def split_into_words(lines):
     words = []
-    for line in all_lines:
+    for line in lines:
         words.extend(word.strip(",.!?") for word in line.split())
     return words
